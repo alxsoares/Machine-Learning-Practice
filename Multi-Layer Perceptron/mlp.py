@@ -111,4 +111,4 @@ class mlp:
 
         print "Confusion matrix is:"
         print cm
-        print "Percentage Correct: ",np.trace(cm)/np.sum(cm)*100
+        print "Percentage Correct: ",np.trace(cm)/np.sum(cm)*100, "%"
