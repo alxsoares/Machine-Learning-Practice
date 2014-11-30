@@ -17,7 +17,7 @@ test = data3[:, 0:2]
 testtarget = data3[:, 2]
 testtarget.shape = (testtarget.shape[0], 1)
 
-net = mlp.mlp(train, traintarget, 3, outtype='logistic')
+net = mlp.mlp(train, traintarget, 5, outtype='logistic')
 # net.mlptrain(train, traintarget, 0.1, 200)
 net.earlystopping(train, traintarget, valid, validtarget, eta=0.1, niterations=100)
 net.confmat(test, testtarget)
